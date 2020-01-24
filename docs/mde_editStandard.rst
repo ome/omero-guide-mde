@@ -9,6 +9,7 @@ We will show:
 
 - How to edit ome metadata
 
+- How to modify the object tree
 
 **Setup**
 ----------------------
