@@ -1,17 +1,14 @@
-Welcome to guide template's documentation!
+OMERO.mde
 ==========================================
+OMERO.mde is an extension of OMERO.importer to get an overview of available metadata provided by the selected image container and annotate images at import step by standardized key-value templates. Changes of metadata provided by image will be saved as key-value pairs.
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   mde_editStandard
+   mde_customizeView
+   mde_customizeObjects
+   mde_predefineObjects
 
