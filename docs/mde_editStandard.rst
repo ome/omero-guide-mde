@@ -58,6 +58,8 @@ Add an additional object in the object tree:
 
 #. Select an object from list under ``Insert Node`` to insert an object.
 
+|mde_objecttree|
+
 Copy and paste of a subtree:
 
 #. Click with the right mouse button on the root of the subtree you want to copy.
@@ -83,4 +85,4 @@ All changes will be add as key-value annotation to the file after import.
         :height: 0.2in
 .. |mde_filterExample| image:: images/mde_filter.png
 .. |mde_annotation| image:: images/mde_annotation.png        
-        
+.. |mde_objecttree| image:: images/mde_objecttree.png       
