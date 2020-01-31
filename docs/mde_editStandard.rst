@@ -32,6 +32,10 @@ and save the files.
 
 #. Click on the MDE Button |mde_button1| at the right bottom pane.
 
+   |mde_overview|
+
+   On the left pane you find the import queue, on the middle pane the object tree and on the right pane the input forms.
+
 #. In the ``Specify MetaData`` window, select a file to show available metadata stored in the file container. After reading the metadata of the file by Bio-Formats
    you can find in the middle pane the object tree with standard OME objects like Image, Experiment, Detector etc. 
    The properties of the selected object in the object tree and its subtree are displayed on the right pane as key-value pairs.
@@ -79,7 +83,7 @@ All changes will be add as key-value annotation to the file after import.
 
 |mde_annotation|
 
-
+.. |mde_overview| image:: images/mde_overview.png
 .. |mde_button1| image:: images/mde_button1.png
         :width: 0.6in
         :height: 0.2in
