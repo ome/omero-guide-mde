@@ -3,6 +3,8 @@
 
 **Description**
 ------------------
+By using the OMERO.mde you can annotate your images with standardized key-values at the import step.
+
 We will show:
 
 - How to enable OMERO.mde feature for the OMERO.importer
