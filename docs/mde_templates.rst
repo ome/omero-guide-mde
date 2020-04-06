@@ -41,17 +41,17 @@ You can save your inputs for MDE objects in a template file for reused the input
 #. Press ok to load the values.
 
 
-.. |mde_SaveTemp| image:: images/mde_SaveTemp.PNG
+.. |mde_SaveTemp| image:: images/mde_SaveTemp.png
         :width: 0.6in
         :height: 0.2in
-.. |mde_SaveTempl_filterObj| image:: images/mde_SaveTempl_filterObj.PNG
-.. |mde_SaveTemplDialog| image:: images/mde_SaveTemplDialog.PNG
-.. |mde_Templ_filterObj| image:: images/mde_Templ_filterObj.PNG
-.. |mde_LoadTemp| image:: images/mde_LoadTemp.PNG
+.. |mde_SaveTempl_filterObj| image:: images/mde_SaveTempl_filterObj.png
+.. |mde_SaveTemplDialog| image:: images/mde_SaveTemplDialog.png
+.. |mde_Templ_filterObj| image:: images/mde_Templ_filterObj.png
+.. |mde_LoadTemp| image:: images/mde_LoadTemp.png
         :width: 0.6in
         :height: 0.2in
-.. |mde_LoadTemplDialog| image:: images/mde_LoadTemplDialog.PNG
-.. |mde_LoadTempl_filterObj| image:: images/mde_LoadTempl_filterObj.PNG
+.. |mde_LoadTemplDialog| image:: images/mde_LoadTemplDialog.png
+.. |mde_LoadTempl_filterObj| image:: images/mde_LoadTempl_filterObj.png
 .. |mde_button1| image:: images/mde_button1.png
         :width: 0.6in
         :height: 0.2in
