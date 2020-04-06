@@ -85,7 +85,7 @@ All changes will be add as key-value annotation to the file after import.
 
 |mde_annotation|
 
-.. |mde_overview| image:: images/mde_overview.png
+.. |mde_overview| image:: images/mde_overview.PNG
 .. |mde_button1| image:: images/mde_button1.png
         :width: 0.6in
         :height: 0.2in
