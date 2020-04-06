@@ -51,4 +51,4 @@ We will show in this section how to create a new setup and how to generate custo
 |mde_customizeView_Customize|
 
 .. |mde_customizeView_Universal| image:: images/mde_customView_Universal.png
-.. |mde_customizeView_Customize| image:: images/mde_customView_Customize.png
+.. |mde_customizeView_Customize| image:: images/mde_customView_Customize.PNG
