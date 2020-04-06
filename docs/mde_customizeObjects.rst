@@ -6,7 +6,7 @@ By using OMERO.mde you can create standardized key-value input forms with certai
 
 **Step-by-Step**
 ------------------
-#. Open the mdeConfiguration.xml file under *<userHome>/omero/*
+#. Open the mdeConfiguration.xml file under *config/*
 
 #. Insert a new ``<ObjectDef>`` element under ``<Definitions>`` and specify the name for the object (here MyCustomObject)::
 
@@ -20,18 +20,31 @@ By using OMERO.mde you can create standardized key-value input forms with certai
 #. Define now the properties (key-values) for your new object. For every property you have to add an ``<TagData>`` element. See below section Type of input fields.
    
 #. Define now in which hierarchy the object should be insert. For that define the parent element::
-        
-            <MDEObjects>
-                <Definitions>
-                    <ObjectDef Type="MyCustomObject">
-                        <TagData.../>
-                        ...
-                        <Parents.../>
-                    </ObjectDef>
-                </Definitions>
-                <Configurations.../>
-            </MDEObjects>
-       
+
+        <MDEObjects>
+            <Definitions>
+                <ObjectDef Type="MyCustomObject">
+                    <TagData.../>
+                    ...
+                    <Parents.../>
+                </ObjectDef>
+            </Definitions>
+            <Configurations.../>
+        </MDEObjects>
+
+
+At this point we have specify an insertable object. You can insert this object with right-click on the specified parent node.
+If you want this object will be automatically inserted to the object tree, you have to specify this also in the *SetupConf* section of the corresponding setup::
+
+        <MDEObjects>
+            <Configurations>
+                <SetupConf Name="MyCustomSetup"
+                    <ObjectConf Type="OME:Image" ...>
+                    <ObjectConf Type="OME:Objective"...>
+                    <ObjectConf Type="MyCustomObject" Insert="true" InsertPoint="OME:Image" ...>
+                </SetupConf>
+            </Configurations>
+        </MDEObjects>
 
 Example
 ^^^^^^^^^^^^
@@ -62,11 +75,40 @@ that has input form for two specify key-value pairs
 
 |mde_customObj2|
 
+With the additional specification in *Configuration*::
+
+    <MDEConfiguration>
+        <MDEPredefinitions...>
+        <MDEObjects>
+            <Definitions>
+                ...
+                <ObjectDef Type="MyCustomObject">
+                    <TagData DefaultValues="" Name="ExampleKey_1" Type="TextField"
+                                Unit="" Value="" Visible="true" />
+                    <TagData DefaultValues="" Name="ExampleKey_2" Type="TextField"
+                                Unit="" Value="" Visible="true" />
+                    <Parents Values="OME:Image" />
+                </ObjectDef>
+            </Definitions>
+            <Configuration>
+                <SetupConf Name="MyCustomSetup">
+                    <ObjectConf Type="OME:Image"...>
+                    <ObjectConf Type="OME:Objective"/>
+                    <ObjectConf Type="MyCustomObject" Insert="true" InsertPoint="OME:Image"/>
+                </SetupConf>
+            </Configurations>
+         </MDEObjects>
+    </MDEConfiguration>
+
+will lead into follwong object tree if you select the setup *MyCustomSetup*
+
+|mde_customObj3|
    
 **Type of input fields**
 -----------------------------
 
-There are different editor input field types for the element ``<TagData>``. 
+There are different editor input field types for the element ``<TagData>``. You can find this example by using the example mdeConfiguration.xml
+and insert a *Available InputFields* object by right-click on OME-Model node.
 
 |mde_availableInputFields|
 
@@ -138,3 +180,4 @@ You can specify the different types like:
 .. |mde_availableInputFields| image:: images/mde_availableInputFields.PNG
 .. |mde_customObj| image:: images/mde_customObj.png
 .. |mde_customObj2| image:: images/mde_customObj2.png
+.. |mde_customObj3| image:: images/mde_customObj3.png

@@ -7,7 +7,7 @@ We will show in this section how to create a new setup and how to generate custo
 
 **Step-by-Step**
 ------------------
-#. Open the mdeConfiguration.xml under *<userHome>/omero/*
+#. Open the mdeConfiguration.xml under *config/*
 
 #. Insert a new ``<SetupConf>`` element under ``<Configuration>`` and specify the name for the setup (here MyCustomSetup)::
 

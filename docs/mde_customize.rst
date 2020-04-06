@@ -4,7 +4,8 @@ Customize OMERO.mde
 **Description**
 ---------------------
 
-You can configurate and customize the OMERO.mde by define and configurate elements in a mdeConfiguration.xml file. A template of this file can be found at https://github.com/sukunis/omero-insight/blob/feat_MDE/mdeConfiguration.xml.
+You can configurate and customize the OMERO.mde by define and configurate elements in a mdeConfiguration.xml file. A template of this file can be found at your *config/* dir of your OMERO.insight installation or
+at https://github.com/sukunis/omero-insight/tree/master/src/config/mdeConfiguration.xml.
 
 Structure of mdeConfiguration.xml::
 
@@ -42,7 +43,20 @@ Structure of mdeConfiguration.xml::
                     </MDEObjects>
                 </MDEConfiguration>
 
-Save the configuration file under *<userHome>/omero/* and restart the OMERO.mde to load custom configurations.
+The location of the configuration file should be your *config/* folder or *<userHome>/omero/*.
+Please specify the location you will use by edit *container.xml* and *containerImporter.xml*. To use *config/* as location::
+
+    <!-- mde config file location (. for in config dir; omero for local user omero dir) -->
+        <entry name="omero.client.import.mde.path">.</entry>
+
+or for *<userHome>/omero/* as location::
+
+    <!-- mde config file location (. for in config dir; omero for local user omero dir) -->
+        <entry name="omero.client.import.mde.path">omero</entry>
+
+and save the files.
+Here we will use *config/* as location for mdeConfiguration.xml.
+Save the configuration file under *config/* and restart the OMERO.mde to load custom configurations.
 
 You can customize the OMERO.mde in following point:
 

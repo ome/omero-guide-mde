@@ -9,5 +9,6 @@ Contents:
 
    mde_editStandard
    mde_customize
+   mde_templates
 
 
