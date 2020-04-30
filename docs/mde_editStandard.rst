@@ -1,8 +1,9 @@
-**Using OMERO.mde to edit ome metadata**
-==========================================
+Using OMERO.mde to edit ome metadata
+====================================
 
 **Description**
-------------------
+---------------
+
 By using the OMERO.mde you can annotate your images with standardized key-values at the import step.
 
 We will show:
@@ -14,7 +15,8 @@ We will show:
 - How to modify the object tree
 
 **Setup**
-----------------------
+---------
+
 Install the OMERO.insight client as described in https://omero-guides.readthedocs.io/en/latest/upload/docs/import-desktop-client.html#setup
 
 Go to *OMERO.insight/config/* and edit *container.xml* and *containerImporter.xml*. To enable the OMERO.mde set boolean to ``true`` in::
@@ -27,7 +29,8 @@ and save the files.
 
 
 **Step-by-Step**
---------------------------
+----------------
+
 #. Start OMERO.importer and login. 
   
 #. Select your files for import and add it to the queue.

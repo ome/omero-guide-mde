@@ -1,14 +1,14 @@
 Predefine object values in OMERO.mde
-======================================
+====================================
 
 **Description**
-----------------------
+---------------
 
 By using OMERO.mde you can generate a set of predefined values for the available objects. You can predefine different values for same objects by group it in setups.
 
 
 **Step-by-Step**
--------------------
+----------------
 
 #. Open the *mdeConfiguration.xml* file under *<userHome>/omero/*
 
@@ -37,7 +37,7 @@ NOTE: You can specify different predefined values for the same object by generat
 
 
 **Example**
---------------
+-----------
 
 Specification like::
         
