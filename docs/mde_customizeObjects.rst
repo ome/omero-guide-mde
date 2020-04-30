@@ -1,13 +1,13 @@
 Add custom objects to OMERO.mde
 ===============================
 
-**Description**
----------------
+Description
+-----------
 
 By using OMERO.mde you can create standardized key-value input forms with certain values and units. You can group key-values by creating an object module with the key-values as properties. We will show in this section how to create new objects for OMERO.mde and how you could create new key-values as properties of objects.
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
 
 #. Open the ``mdeConfiguration.xml`` file under ``config/``.
 

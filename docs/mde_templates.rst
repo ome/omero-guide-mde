@@ -3,8 +3,8 @@ Use input templates for OMERO.mde
 
 You can save your inputs for MDE objects in a template file for reused the inputs for another import.
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
 
 **Save input:**
 

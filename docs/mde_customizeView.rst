@@ -1,14 +1,14 @@
 Customize user input form of OMERO.mde
 ======================================
 
-**Description**
----------------
+Description
+-----------
 
 You can generate a filter view of the sets of objects. Also you can hide properties for objects and change the default unit.
 We will show in this section how to create a new setup and how to generate customized input forms of available objects in this setup.
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
 
 #. Open the ``mdeConfiguration.xml`` file under ``config/``.
 

@@ -1,8 +1,8 @@
 Customize OMERO.mde
 ===================
 
-**Description**
----------------
+Description
+-----------
 
 You can configurate and customize the OMERO.mde by defining and configurating elements in a ``mdeConfiguration.xml`` file. A template of this file can be found in the ``config/`` directory of the installed OMERO.insight installation or
 at `mdeConfiguration.xml <https://github.com/ome/omero-insight/tree/master/src/config/mdeConfiguration.xml>`__.
