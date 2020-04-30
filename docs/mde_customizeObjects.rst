@@ -1,12 +1,15 @@
 Add custom objects to OMERO.mde
-================================
+===============================
+
 **Description**
-------------------
+---------------
+
 By using OMERO.mde you can create standardized key-value input forms with certain values and units. You can group key-values by creating an object module with the key-values as properties. We will show in this section how to create new objects for OMERO.mde and how you could create new key-values as properties of objects.
 
 **Step-by-Step**
-------------------
-#. Open the mdeConfiguration.xml file under *config/*
+----------------
+
+#. Open the ``mdeConfiguration.xml`` file under ``config/``.
 
 #. Insert a new ``<ObjectDef>`` element under ``<Definitions>`` and specify the name for the object (here MyCustomObject)::
 
@@ -33,7 +36,7 @@ By using OMERO.mde you can create standardized key-value input forms with certai
         </MDEObjects>
 
 
-At this point we have specify an insertable object. You can insert this object with right-click on the specified parent node.
+At this point we have specified an insertable object. You can insert this object with right-click on the specified parent node.
 If you want this object will be automatically inserted to the object tree, you have to specify this also in the *SetupConf* section of the corresponding setup::
 
         <MDEObjects>
@@ -47,7 +50,7 @@ If you want this object will be automatically inserted to the object tree, you h
         </MDEObjects>
 
 Example
-^^^^^^^^^^^^
+^^^^^^^
 Specification like::
 
                 <MDEConfiguration>
@@ -67,11 +70,11 @@ Specification like::
                      </MDEObjects>
                 </MDEConfiguration>
 
-will create an insertable object at ``OME:Image`` object
+will create an insertable object at ``OME:Image`` object.
 
 |mde_customObj|
 
-that has input form for two specify key-value pairs
+that has input form for two specified key-value pairs
 
 |mde_customObj2|
 
@@ -100,15 +103,15 @@ With the additional specification in *Configuration*::
          </MDEObjects>
     </MDEConfiguration>
 
-will lead into follwong object tree if you select the setup *MyCustomSetup*
+will lead into following object tree if you select the setup *MyCustomSetup*
 
 |mde_customObj3|
    
 **Type of input fields**
------------------------------
+------------------------
 
-There are different editor input field types for the element ``<TagData>``. You can find this example by using the example mdeConfiguration.xml
-and insert a *Available InputFields* object by right-click on OME-Model node.
+There are different editor input field types for the element ``<TagData>``. You can find this example by using the example ``mdeConfiguration.xml``
+and insert a *Available InputFields* object by right-clicking on OME-Model node.
 
 |mde_availableInputFields|
 

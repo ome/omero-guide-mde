@@ -4,8 +4,8 @@ Customize OMERO.mde
 **Description**
 ---------------
 
-You can configurate and customize the OMERO.mde by define and configurate elements in a mdeConfiguration.xml file. A template of this file can be found at your *config/* dir of your OMERO.insight installation or
-at https://github.com/ome/omero-insight/tree/master/src/config/mdeConfiguration.xml.
+You can configurate and customize the OMERO.mde by defining and configurating elements in a ``mdeConfiguration.xml`` file. A template of this file can be found in the ``config/`` directory of the installed OMERO.insight installation or
+at `mdeConfiguration.xml <https://github.com/ome/omero-insight/tree/master/src/config/mdeConfiguration.xml>`__.
 
 Structure of mdeConfiguration.xml::
 
@@ -43,20 +43,20 @@ Structure of mdeConfiguration.xml::
                     </MDEObjects>
                 </MDEConfiguration>
 
-The location of the configuration file should be your *config/* folder or *<userHome>/omero/*.
-Please specify the location you will use by edit *container.xml* and *containerImporter.xml*. To use *config/* as location::
+The location of the configuration file should be in the ``config/`` folder or ``<userHome>/omero/``.
+Please specify the location you will use by editing ``container.xml`` and ``containerImporter.xm``. To use ``config/`` as location::
 
     <!-- mde config file location (. for in config dir; omero for local user omero dir) -->
         <entry name="omero.client.import.mde.path">.</entry>
 
-or for *<userHome>/omero/* as location::
+or for ``<userHome>/omero/`` as location::
 
     <!-- mde config file location (. for in config dir; omero for local user omero dir) -->
         <entry name="omero.client.import.mde.path">omero</entry>
 
 and save the files.
-Here we will use *config/* as location for mdeConfiguration.xml.
-Save the configuration file under *config/* and restart the OMERO.mde to load custom configurations.
+Here we will use ``config/`` as location for ``mdeConfiguration.xml``.
+Save the configuration file under ``config/`` and restart the OMERO.mde to load the custom configurations.
 
 You can customize the OMERO.mde in following point:
 

@@ -10,7 +10,7 @@ By using OMERO.mde you can generate a set of predefined values for the available
 **Step-by-Step**
 ----------------
 
-#. Open the *mdeConfiguration.xml* file under *<userHome>/omero/*
+#. Open the ``mdeConfiguration.xml`` file under ``<userHome>/omero/``.
 
 #. Insert a new ``<SetupPre>`` element under ``<MDEPredefinitions>`` with the name of the setup for that you want to specify the values::
 
@@ -32,7 +32,7 @@ By using OMERO.mde you can generate a set of predefined values for the available
         
 #. Now you can copy - paste the object properties definied under <ObjectDef> for this object and then specify the Values.
 
-NOTE: You can specify different predefined values for the same object by generate multi ``<ObjectPre>`` elements for this object. The OMERO.mde than shows you a table of available Elements Predefinitions) for this object.
+NOTE: You can specify different predefined values for the same object by generate multi ``<ObjectPre>`` elements for this object. OMERO.mde than shows you a table of available Elements Predefinitions) for this object.
 
 
 

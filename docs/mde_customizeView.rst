@@ -10,7 +10,7 @@ We will show in this section how to create a new setup and how to generate custo
 **Step-by-Step**
 ----------------
 
-#. Open the mdeConfiguration.xml under *config/*
+#. Open the ``mdeConfiguration.xml`` file under ``config/``.
 
 #. Insert a new ``<SetupConf>`` element under ``<Configuration>`` and specify the name for the setup (here MyCustomSetup)::
 
@@ -43,7 +43,7 @@ We will show in this section how to create a new setup and how to generate custo
                 </Configurations>
             </MDEObjects>
 
-#. Save the file and restart the OMERO.importer to load the new configuration for the OMERO.mde. Select your images or dataset for import. Switch to the OMERO.mde pane and select your setup to load your customize forms.
+#. Save the file and restart OMERO.importer to load the new configuration for OMERO.mde. Select your images or dataset for import. Switch to the OMERO.mde pane and select your setup to load your customize forms.
 
 **Setup:** Universal 
 

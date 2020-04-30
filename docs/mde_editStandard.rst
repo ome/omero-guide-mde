@@ -4,7 +4,7 @@ Using OMERO.mde to edit ome metadata
 **Description**
 ---------------
 
-By using the OMERO.mde you can annotate your images with standardized key-values at the import step.
+By using OMERO.mde you can annotate your images with standardized key-values at the import step.
 
 We will show:
 
@@ -17,9 +17,9 @@ We will show:
 **Setup**
 ---------
 
-Install the OMERO.insight client as described in https://omero-guides.readthedocs.io/en/latest/upload/docs/import-desktop-client.html#setup
+Install the OMERO.insight client as described in `import-desktop-client.html#setup <https://omero-guides.readthedocs.io/en/latest/upload/docs/import-desktop-client.html#setup>`__
 
-Go to *OMERO.insight/config/* and edit *container.xml* and *containerImporter.xml*. To enable the OMERO.mde set boolean to ``true`` in::
+Go to ``OMERO.insight/config/`` and edit ``container.xml`` and ``containerImporter.xml``. To enable the OMERO.mde set boolean to ``true`` in::
 
         <!-- mde on/off -->
 

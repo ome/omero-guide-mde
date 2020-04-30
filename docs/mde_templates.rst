@@ -24,7 +24,7 @@ You can save your inputs for MDE objects in a template file for reused the input
 
 #. Choose the location and file name for your template file.
 
-#. Press ok to save the file
+#. Press ok to save the file.
 
 
 **Loading the template file for another import:**
