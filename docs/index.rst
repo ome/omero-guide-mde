@@ -6,7 +6,7 @@ OMERO.mde is an extension of OMERO.importer to get an overview of available meta
 Contents:
 
 .. toctree::
-   :maxdepth: 2 
+   :maxdepth: 3
 
    mde_editStandard
    mde_customize
