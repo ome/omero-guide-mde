@@ -1,6 +1,7 @@
 Use input templates for OMERO.mde
 =================================
 
+** only available from OMERO.insight v5.5.11**
 You can save your inputs for MDE objects in a template file for reused the inputs for another import.
 
 Step-by-Step
