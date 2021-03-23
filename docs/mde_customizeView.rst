@@ -44,7 +44,7 @@ Step-by-Step
                 </Configurations>
             </MDEObjects>
 
-    You can mark any field as required by adding ``Required = "true"`` as an attribute of ``TagDataProp`` (OMERO.insight version > 5.5.15).
+    You can mark any field as required by adding ``Required = "true"`` as an attribute of ``TagDataProp`` (OMERO.insight version >= 5.5.15).
     By selecting |mde_required_btn|, you can restrict the displayed objects of the selected setup to those that contain at least one required metadata field.
             <MDEObjects>
                 <Configurations>
