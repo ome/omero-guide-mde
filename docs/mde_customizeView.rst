@@ -32,7 +32,7 @@ Step-by-Step
                 </Configurations>
             </MDEObjects>
    
-    For this objects also add ``<TagDataProp>`` elements for the properties where you want to change the unit or you want to hide this property::
+   For this objects also add ``<TagDataProp>`` elements for the properties where you want to change the unit or you want to hide this property::
 
             <MDEObjects>
                 <Configurations>
