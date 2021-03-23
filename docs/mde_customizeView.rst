@@ -32,7 +32,7 @@ Step-by-Step
                 </Configurations>
             </MDEObjects>
    
-   For this objects also add ``<TagDataProp>`` elements for the properties where you want to change the unit or you want to hide this property.::
+    For this objects also add ``<TagDataProp>`` elements for the properties where you want to change the unit or you want to hide this property::
 
             <MDEObjects>
                 <Configurations>
@@ -44,17 +44,6 @@ Step-by-Step
                 </Configurations>
             </MDEObjects>
 
-    You can mark any field as required by adding ``Required = "true"`` as an attribute of ``TagDataProp`` (OMERO.insight version >= 5.5.15).
-    By selecting |mde_required_btn|, you can restrict the displayed objects of the selected setup to those that contain at least one required metadata field.
-            <MDEObjects>
-                <Configurations>
-                    <SetupConf Name="Example Setup: Fields">
-                        <ObjectConf Type="OME:Image"/>
-                            <TagDataProp Name="Name" Unit ="" Visible ="true" Required="true"/>
-                        <ObjectConf Type="OME:Objective"/>
-                    </SetupConf>
-                </Configurations>
-            </MDEObjects>
 
 #. Save the file and restart OMERO.importer to load the new configuration for OMERO.mde. Select your images or dataset for import. Switch to the OMERO.mde pane and select your setup to load your customize forms.
 
@@ -65,6 +54,19 @@ Step-by-Step
 **Setup:** MyCustomSetup
 
 |mde_customizeView_Customize|
+
+You can mark any field as required by adding ``Required = "true"`` as an attribute of ``TagDataProp`` (OMERO.insight version >= 5.5.15).
+By selecting |mde_required_btn|, you can restrict the displayed objects of the selected setup to those that contain at least one required metadata field::
+
+            <MDEObjects>
+                <Configurations>
+                    <SetupConf Name="Example Setup: Fields">
+                        <ObjectConf Type="OME:Image"/>
+                            <TagDataProp Name="Name" Unit ="" Visible ="true" Required="true"/>
+                        <ObjectConf Type="OME:Objective"/>
+                    </SetupConf>
+                </Configurations>
+            </MDEObjects>
 
 **Setup:** Example Setup: Fields
 
