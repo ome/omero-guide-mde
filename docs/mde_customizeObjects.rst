@@ -111,7 +111,7 @@ will lead into following object tree if you select the setup *MyCustomSetup*
 ------------------------
 
 There are different editor input field types for the element ``<TagData>``. You can find this example by using the example ``mdeConfiguration.xml``
-and insert a *Available InputFields* object by right-clicking on OME-Model node.
+and insert a *Available InputFields* object by right-clicking on OME-Model node or it is inserted automatically when you select the setup ``Example Setup:Fields``.
 
 |mde_availableInputFields|
 
@@ -165,11 +165,31 @@ You can specify the different types like:
  `ComboBox` define like::
 
     <TagData DefaultValues="Value1,Value2,Value3"
-    	      Name="tag of Type ComboBox"
+    	      Name="Tag of Type ComboBox"
               Type="ComboBox"
               Unit=""
               Value=""
               Visible="true" />
+
+ `ComboBox` with values from ontology (OMERO.insight version >= |insight_version|)::
+
+    <TagData DefaultValues=""
+             Name="Tag of Type ComboBox val from ontology href"
+             Type="ComboBox"
+             Unit=""
+             Value=""
+             Visible="true">
+        <Ontology URL_restapi="http://data.bioontology.org" Acronym="BAO" ID_href="http://www.bioassayontology.org/bao#BAO_0150008" />
+    </TagData>
+
+ `CheckComboBox` for multiple selection (OMERO.insight version >= |insight_version|)::
+
+     <TagData DefaultValues="Value1,Value2,Value3"
+              Name="Tag of Type CheckComboBox"
+              Type="CheckComboBox"
+              Unit=""
+              Value="Value1"
+              Visible="true" /
 
  `TimeStamp` define like::
 

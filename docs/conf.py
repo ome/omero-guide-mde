@@ -50,14 +50,15 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'guide template'
-copyright = u'2019, Open Microscopy Environment'
+copyright = u'2019-2021, Open Microscopy Environment'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '0.1.0'
+version = '0.1.1'
+
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -334,3 +335,7 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+rst_epilog = """
+.. |insight_version| replace:: 5.5.15
+"""

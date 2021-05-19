@@ -43,8 +43,8 @@ Structure of mdeConfiguration.xml::
                     </MDEObjects>
                 </MDEConfiguration>
 
-The location of the configuration file should be in the ``config/`` folder or ``<userHome>/omero/``.
-Please specify the location you will use by editing ``container.xml`` and ``containerImporter.xm``. To use ``config/`` as location::
+The location of the configuration file should be in the ``config/`` folder or in ``<userHome>/omero/``.
+Please specify the location you will use by editing ``container.xml`` and ``containerImporter.xml``. To use ``config/`` as location::
 
     <!-- mde config file location (. for in config dir; omero for local user omero dir) -->
         <entry name="omero.client.import.mde.path">.</entry>
