@@ -58,6 +58,7 @@ copyright = u'2019-2021, Open Microscopy Environment'
 #
 # The short X.Y version.
 version = '0.1.1'
+
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -334,3 +335,7 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
+
+rst_epilog = """
+.. |insight_version| replace:: 5.5.15
+"""
